@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(0, 255, 204, 1) 0%, rgba(0, 150, 255, 1) 100%);
+    padding: 20px;
+    text-align: left;
+}
+
+h1.nombre {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #00aaff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(0, 150, 255, 0.2);
+    color: #ff4081;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Sección "Sobre mí" */
+#about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 150, 255, 0.05);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 255, 204, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-top: 10px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Sección "Habilidades" */
+#skills {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #00aaff;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(0, 150, 255, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 150, 255, 0.1);
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Sección "Proyectos" */
+#project-details {
+    padding: 40px;
+    background-color: rgba(0, 150, 255, 0.05);
+}
+
+#project-details h2 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+#project-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#project-details ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#project-details ul li:hover {
+    background-color: rgba(255, 64, 129, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 150, 255, 0.1);
+}
+
+/* Sección "Recomendaciones" */
+#recommendations {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+#recommendations h2 {
+    font-size: 28px;
+    color: #00aaff;
+}
+
+#recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recommendations ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: rgba(0, 150, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#recommendations ul li:hover {
+    background-color: rgba(0, 255, 204, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 150, 255, 0.1);
+}
+
+#recommendation-form {
+    margin-top: 20px;
+}
+
+#recommendation-form textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#recommendation-form textarea:focus {
+    border-color: #ff4081;
+    outline: none;
+}
+
+#recommendation-form button {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#recommendation-form button:hover {
+    background-color: #ff4081;
+}
+
+/* Icono de Inicio */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 150, 255, 0.05);
+}
+
+.home-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.home-icon:hover {
+    transform: scale(1.2);
+}

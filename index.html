@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Estudiante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nombre estilizado -->
+    <header>
+        <h1 class="nombre">Dhaniel Santamaria</h1>
+        <h2>Estudiante de Ingenieria de Software</h2>
+        <h3>Universidad UNIMINUTO</h3>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#project-details">Detalles del proyecto</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#recommendations">Recomendaciones</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="about">
+        <img src="img/perfil coursera.jpg" alt="Foto de perfil" class="profile-pic">
+        <h2>Dhaniel Santamaria</h2>
+        <p>Tengo una base sólida en Blender, Unity y C++. En Blender, manejas lo esencial del modelado 3D; en Unity, sabes crear entornos básicos y aplicar scripts; y en C++, 
+            dominas la lógica fundamental. Estas habilidades te están formando como un desarrollador versátil y en crecimiento..</p>
+    </section>
+
+    <!-- Sección "Habilidades" -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="img/blender-1.png" alt="Logo de HTML">
+                <p>DISEÑO BASICO EN BLENDER</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png" alt="Logo de CSS">
+                <p>PROGRAMACION BASICA EN C++</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/unity-69.png" alt="Logo de JavaScript">
+                <p>USO BASICO DE UNITY</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Proyectos" -->
+    <section id="project-details">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>Proyecto 1: Creación de personajes para un videojuego.</li>
+            <li>Proyecto 2: Creación de ambiente 3D para un videojuego.</li>
+            <li>Proyecto 3: Creación de un videojuego básico endless runner.</li>
+        </ul>
+    </section>
+
+    <!-- Sección "Recomendaciones" -->
+    <section id="recommendations">
+        <h2>Recomendaciones</h2>
+        <ul>
+            <li>"La mejor experiencia de trabajo con este estudiante..." - Recomendador 1</li>
+            <li>"Gran colaboración y habilidades técnicas..." - Recomendador 2</li>
+            <li>"Destaca en trabajo en equipo y resolución de problemas..." - Recomendador 3</li>
+        </ul>
+
+        <form id="recommendation-form">
+            <label for="recommendation">Añadir recomendación:</label>
+            <textarea id="recommendation" name="recommendation" rows="4" cols="50"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Icono de Inicio -->
+    <footer>
+        <img src="img/perfil coursera.jpg" alt="Icono de Inicio" class="home-icon">
+    </footer>
+
+    <script>
+        // Mostrar mensaje emergente al enviar recomendación
+        document.getElementById('recommendation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("¡Gracias por tu recomendación!");
+        });
+    </script>
+</body>
+</html>
